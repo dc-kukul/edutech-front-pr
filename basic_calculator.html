@@ -1,0 +1,67 @@
+<meta charset = "UTF-8">
+
+
+<body>
+
+	<h1>BASIC CALCULATOR</h1>
+
+
+
+	<script>
+	
+
+		var continua = prompt("Olá. Bem-vindo à BASIC CALCULATOR! Deseja continuar? \n 1 - SIM\n 2 - NÃO")
+
+		if (continua == 2){
+			var opcao = document.write("Obrigado por visitar nosso programa! Tchau! (se quiser, deixe, abaixo, uma sujestão para melhoria do programa!). Ah, o resultado é, haha, --->   ")
+
+		}
+
+		if (continua == 1){
+			var opcao = prompt("Digite a opção (operação) desejada: \n 1 - ADIÇÃO\n 2 - SUBTRAÇÃO\n 3 - MULTIPLICAÇÃO\n 4 - DIVISÃO");
+		}
+
+		
+		if (opcao == 1){
+
+		var nome = prompt("Digite seu nome: ");
+		var numero = parseInt(prompt("Digite um número (para somar): "));
+		var numero2 = parseInt(prompt("Digite outro número (para ser somado): "));
+		var resultado = numero + numero2;
+		
+		}
+
+		if (opcao == 2){
+
+		var nome = prompt("Digite seu nome: ");
+		var numero = parseInt(prompt("Digite um numero (para ser diminuído): "));
+		var numero2 = parseInt(prompt("Digite outro numero (para diminuír: "));
+		var resultado = numero - numero2;
+
+		}
+		
+		if (opcao == 3){
+
+		var nome = prompt("Digite seu nome: ");
+		var numero = parseInt(prompt("Digite um número (para multiplicar): "));
+		var numero2 = parseInt(prompt("Digite outro número (para ser multiplicado): "));
+		var resultado = numero * numero2;
+		
+		}
+
+		if (opcao == 4){
+
+		var nome = prompt("Digite seu nome: ");
+		var numero = parseInt(prompt("Digite um número (para ser o dividendo): "));
+		var numero2 = parseInt(prompt("Digite outro número (para ser o divisor): "));
+		var resultado = numero / numero2;
+		
+		}
+		
+
+ 		document.write(nome + ", o resultado da operação matemática é: " +resultado);
+
+
+
+	</script>
+</body>
